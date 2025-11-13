@@ -154,3 +154,21 @@
       console.log("8. ", podioClon);
       
      //  -----------------------------------------------------------------------------------------------------------------------------
+
+     /* 
+      ## Ejercicio 9: Unir Equipos (concat)
+      
+     Inicias con dos listas:
+     let equipoDev = ["Ana", "Juan"];
+     let equipoQA = ["Carlos", "Maria"];
+
+     Tareas:
+      1.  Crea un nuevo arreglo `equipoCompleto` que sea la unión de `equipoDev` y `equipoQA`. */
+
+     let equipoDev = ["Ana", "Juan"];
+     let equipoQA = ["Carlos", "Maria"];
+     
+     let equipoCompleto = equipoDev.concat(equipoQA);
+     console.log("9. ", equipoCompleto);
+     
+     //  -----------------------------------------------------------------------------------------------------------------------------
