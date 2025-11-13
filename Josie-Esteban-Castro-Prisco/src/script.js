@@ -16,13 +16,33 @@
  }) 
 
  console.log(puntos);
- console.log(puntosDoble);
+ console.log(puntosDoble); 
 
- //*******************************************
+   //  -----------------------------------------------------------------------------------------------------------------------------
+
+   /*
+
+    Punto 2. 
+   
+    Lista de Nombres (map con objetos)
+
+    Inicias con una lista de usuarios:
+    let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
+
+    Tareas:
+
+      1.  Crea un nuevo arreglo `nombres` que contenga solo los nombres de los usuarios (ej: `["Ana", "Luis", "Carlos"]`)./
  
+        let nombres = ["Ana", "Luis", "Carlos"]; */
 
+  
+   let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
 
-
-
+    let nombres = usuarios.map(equis =>  equis.nombre );       /* Pregunta de esta instruccion profe:   en este caso la variablle que use (equis)
+                                                                     puedo usar esa por ejm de aqui en adelante para yo guiarme siempre o debo usar
+                                                                        alguna palabra en especifico por digamos buenas practicas de programacion?  */
+    console.log(nombres);
+    
+  //  -----------------------------------------------------------------------------------------------------------------------------
 
 

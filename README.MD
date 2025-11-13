@@ -3,6 +3,7 @@
 Resuelve los siguientes problemas utilizando los métodos de arreglos no mutables. El objetivo es **nunca modificar el arreglo original**.
 
 Utiliza principalmente: `map`, `filter`, `reduce`, `slice`, `concat`, `find`, `includes`.
+// Utiliza principalmente: `map`, `filter`, `reduce`, `slice`, `concat`, `find`, `includes`.
 
 ## Instrucciones de desarrollo
 * Forkear el repositorio Original
