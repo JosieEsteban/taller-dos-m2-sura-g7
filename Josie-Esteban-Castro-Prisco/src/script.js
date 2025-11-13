@@ -172,3 +172,23 @@
      console.log("9. ", equipoCompleto);
      
      //  -----------------------------------------------------------------------------------------------------------------------------
+     /* 
+      ## Ejercicio 10: Añadir al Carrito (concat - Inmutable)
+      
+     Inicias con un carrito de compras:
+     let carrito = ["Manzana"];
+
+     Tareas:
+      1.  Crea un `nuevoCarrito` que contenga los elementos del `carrito` original más "Pera".
+      2.  Verifica que `carrito` original solo tiene "Manzana".*/
+      
+      let carrito = ["Manzana"];
+
+
+      let nuevoCarrito = carrito.concat("Pera");
+
+      console.log("10.", nuevoCarrito);
+      console.log("  ", "Verificacion de arreglo carrito[] original: \n\n  ", " ", carrito);
+    
+     //  -----------------------------------------------------------------------------------------------------------------------------
+
