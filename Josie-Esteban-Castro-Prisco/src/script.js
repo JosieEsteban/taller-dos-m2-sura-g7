@@ -38,11 +38,33 @@
   
    let usuarios = [{id: 1, nombre: "Ana"}, {id: 2, nombre: "Luis"}, {id: 3, nombre: "Carlos"}];
 
-    let nombres = usuarios.map(equis =>  equis.nombre );       /* Pregunta de esta instruccion profe:   en este caso la variablle que use (equis)
+    let nombres = usuarios.map(equis =>  equis.nombre );       /* Pregunta de esta instruccion Teacher y thank u! :   en este caso la variablle que use (equis)
                                                                      puedo usar esa por ejm de aqui en adelante para yo guiarme siempre o debo usar
                                                                         alguna palabra en especifico por digamos buenas practicas de programacion?  */
     console.log(nombres);
     
   //  -----------------------------------------------------------------------------------------------------------------------------
 
+  /* 
+      
+     ## Ejercicio 3: Notas Aprobadas (filter)
 
+      Inicias con una lista de calificaciones:
+      let notas = [8, 5, 10, 3, 7];
+
+     Tareas: 
+       1.  Crea un nuevo arreglo `aprobadas` que contenga solo las notas que sean mayores o iguales a 6.  */
+
+        let notas = [8, 5, 10, 3, 7];
+
+        let aprobadas = notas.filter(equis => equis >= 6);
+
+       console.log(aprobadas);
+
+   //  -----------------------------------------------------------------------------------------------------------------------------
+
+
+
+       
+
+   
