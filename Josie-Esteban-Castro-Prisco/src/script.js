@@ -118,4 +118,25 @@
          
    //  -----------------------------------------------------------------------------------------------------------------------------
 
+   /*
+      ## Ejercicio 7: Crear una Copia (slice)
+     
+      Inicias con un arreglo:
+      let original = ["A", "B", "C"];
 
+     Tareas:
+      1.  Crea un `clon` exacto del arreglo `original` usando `slice()`.
+      2.  (Verificación) Modifica el `clon` (ej. `clon.push("D")`) y demuestra que `original` sigue intacto. */
+
+      let original = ["A", "B", "C"];
+
+      let clon = original.slice();
+
+      clon.push("D");
+
+      console.log("Arreglo Original:  " + original);
+      console.log("Arreglo modificado con letra 'D' agregada: " + clon);
+      
+   //  -----------------------------------------------------------------------------------------------------------------------------
+
+    
