@@ -97,3 +97,25 @@
            console.log("El valor total en ventas es de: " +totalVentas);
            
    //  -----------------------------------------------------------------------------------------------------------------------------
+
+   /* 
+      ## Ejercicio 6: Aplanar un Arreglo (reduce)
+
+     Inicias con una lista de listas:
+     let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
+
+     Tareas: 
+       1.  Crea un nuevo arreglo `listaPlana` que contenga todos los nombres en un solo nivel (ej: `["Ana", "Luis", "Maria", "Juan", "Pedro"]`). 
+            (Pista: `reduce` puede usar `concat`). */
+
+
+       let grupos = [["Ana", "Luis"], ["Maria", "Juan"], ["Pedro"]];
+
+         let listaPlana = grupos[0].concat(grupos[1], grupos[2]);
+
+         console.log(grupos + "");     // ¿¿ Me puedes explicar porque esto funciona estre comillas por respecto a lo que muestra en consola
+         console.log(listaPlana);     //  llegue a ese resultado jugando concatenando varios elementos dentro de los () del console.log con + ??
+         
+   //  -----------------------------------------------------------------------------------------------------------------------------
+
+
