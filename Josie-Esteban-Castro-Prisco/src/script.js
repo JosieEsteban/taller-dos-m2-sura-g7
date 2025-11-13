@@ -15,8 +15,8 @@
       return num * 2;      
  }) 
 
- console.log(puntos);
- console.log(puntosDoble); 
+ console.log("1. ",puntos);
+ console.log("   ", puntosDoble); 
 
    //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -41,7 +41,7 @@
     let nombres = usuarios.map(equis =>  equis.nombre );       /* Pregunta de esta instruccion Teacher y thank u! :   en este caso la variablle que use (equis)
                                                                      puedo usar esa por ejm de aqui en adelante para yo guiarme siempre o debo usar
                                                                         alguna palabra en especifico por digamos buenas practicas de programacion?  */
-    console.log(nombres);
+    console.log("2. ", nombres);
     
   //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -59,7 +59,7 @@
 
         let aprobadas = notas.filter(equis => equis >= 6);
 
-       console.log(aprobadas);
+       console.log("3. ", aprobadas);
 
    //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -77,7 +77,7 @@
 
 
          let enStock = productos.filter(equis => equis.stock > 0);
-         console.log(enStock);
+         console.log("4. ", enStock);
          
    //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -94,7 +94,7 @@
    
            let totalVentas = ventas.reduce((acumulador, equis) => acumulador + equis, 0);
 
-           console.log("El valor total en ventas es de: " +totalVentas);
+           console.log("5.   " +"El valor total en ventas es de: " +totalVentas);
            
    //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -113,8 +113,8 @@
 
          let listaPlana = grupos[0].concat(grupos[1], grupos[2]);
 
-         console.log(grupos + "");     // ¿¿ Me puedes explicar porque esto funciona estre comillas por respecto a lo que muestra en consola
-         console.log(listaPlana);     //  llegue a ese resultado jugando concatenando varios elementos dentro de los () del console.log con + ??
+         console.log("6.   " + grupos + "");     // ¿¿ Me puedes explicar porque esto funciona estre comillas por respecto a lo que muestra en consola
+         console.log("     " + listaPlana);     //  llegue a ese resultado jugando concatenando varios elementos dentro de los () del console.log con + ??
          
    //  -----------------------------------------------------------------------------------------------------------------------------
 
@@ -134,9 +134,23 @@
 
       clon.push("D");
 
-      console.log("Arreglo Original:  " + original);
-      console.log("Arreglo modificado con letra 'D' agregada: " + clon);
+      console.log("7.   " + "Arreglo Original:  " + original);
+      console.log("    ", "Arreglo modificado con letra 'D' agregada: " + clon);
       
    //  -----------------------------------------------------------------------------------------------------------------------------
 
+   /* 
+      ## Ejercicio 8: Obtener el Podio (slice)
+
+     Inicias con una lista de competidores:
+     let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
+
+     Tareas:
+      1.  Crea un nuevo arreglo `podio` que contenga solo los primeros 3 elementos (Oro, Plata, Bronce). */
     
+      let competidores = ["Oro", "Plata", "Bronce", "Mención 1", "Mención 2"];
+
+      let podioClon = competidores.slice(0, 3);
+      console.log("8. ", podioClon);
+      
+     //  -----------------------------------------------------------------------------------------------------------------------------
