@@ -193,8 +193,8 @@
      //  -----------------------------------------------------------------------------------------------------------------------------
 
      /* 
-        ## Ejercicio 11: Verificar Permiso (includes)
-
+     ## Ejercicio 11: Verificar Permiso (includes)
+     
        Inicias con los roles de un usuario:
         let roles = ["USER", "EDITOR"];
 
@@ -209,6 +209,38 @@
 
         let verificaEDITOR = roles.includes("EDITOR");
         console.log("11. ", verificaEDITOR);
+ 
+       //  -----------------------------------------------------------------------------------------------------------------------------
+        /*
+           ## Ejercicio 12: Encontrar Usuario (find)
+
+           Inicias con la lista de usuarios:
+           let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+
+           Tareas:
+           1.  Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.*/
+
+           let usuari0s = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+
+             let encontrar = usuari0s.find(equis => equis.id == 102);
+
+             console.log(encontrar);
+
+       //  -----------------------------------------------------------------------------------------------------------------------------
+          /*
+             ## Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+
+             Inicias con una lista de invitados desordenada:
+             let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+
+             Tareas:
+             1.  Crea un nuevo arreglo `invitadosOrdenados` ordenando la lista. **Importante: ¡No mutes el original!** (Pista: `[...invitados].sort()`).
+             2.  Muestra `invitados` para verificar que sigue en el orden original.  */
+
+             let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+         
+             
+             
 
 
           
