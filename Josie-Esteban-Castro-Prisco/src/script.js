@@ -192,3 +192,26 @@
     
      //  -----------------------------------------------------------------------------------------------------------------------------
 
+     /* 
+        ## Ejercicio 11: Verificar Permiso (includes)
+
+       Inicias con los roles de un usuario:
+        let roles = ["USER", "EDITOR"];
+
+       Tareas:
+       1.  Verifica si el usuario tiene el rol "ADMIN". (El resultado debe ser `false`).
+       2.  Verifica si el usuario tiene el rol "EDITOR". (El resultado debe ser `true`).*/
+
+        let roles = ["USER", "EDITOR"];
+
+        let verificaADMIN = roles.includes("ADMIN");
+        console.log("11. ", verificaADMIN);
+
+        let verificaEDITOR = roles.includes("EDITOR");
+        console.log("11. ", verificaEDITOR);
+
+
+          
+
+
+
