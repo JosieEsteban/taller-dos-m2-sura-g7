@@ -208,7 +208,7 @@
         console.log("11. ", verificaADMIN);
 
         let verificaEDITOR = roles.includes("EDITOR");
-        console.log("11. ", verificaEDITOR);
+        console.log("    ", verificaEDITOR);
  
        //  -----------------------------------------------------------------------------------------------------------------------------
         /*
@@ -224,20 +224,27 @@
 
              let encontrar = usuari0s.find(equis => equis.id == 102);
 
-             console.log(encontrar);
+             console.log("12.", encontrar);
 
        //  -----------------------------------------------------------------------------------------------------------------------------
           /*
-             ## Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+           ## Ejercicio 13: Ordenar sin Mutar (Copia + sort)
 
-             Inicias con una lista de invitados desordenada:
-             let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+           Inicias con una lista de invitados desordenada:
+           let invitados = ["Zapata", "Alvarez", "Gomez", "Ber
 
-             Tareas:
-             1.  Crea un nuevo arreglo `invitadosOrdenados` ordenando la lista. **Importante: ¡No mutes el original!** (Pista: `[...invitados].sort()`).
-             2.  Muestra `invitados` para verificar que sigue en el orden original.  */
+           Tareas:
+           1.  Crea un nuevo arreglo `invitadosOrdenados` ordenando la lista. **Importante: ¡No mutes el original!** (Pista: `[...invitados].sort()`).
+           2.  Muestra `invitados` para verificar que sigue en el orden origina */
 
-             let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+           let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+
+           let invitadosOrdenados = [...invitados].sort ();
+
+           console.log("\n 13. ","Arreglo original sin modificar \n", "\n", invitados);
+           console.log("", "\n      Arreglo con los nombres ordenados\n", " \n", invitadosOrdenados); 
+          
+
          
              
              
