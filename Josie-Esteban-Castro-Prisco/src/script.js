@@ -331,4 +331,23 @@
       
 //  -----------------------------------------------------------------------------------------------------------------------------  
  /* 
- */
+  ## Ejercicio 18: Combo (filter y map)
+
+ Inicias con una lista de productos:
+ let productos = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];
+
+ Tareas:
+ 1.  Crea un nuevo arreglo `productosCaros` que contenga solo los *nombres* de los productos que cuestan más de 4. (Resultado esperado: `["Carne"]`).
+ 2.  (Pista: Encadena `filter` y luego `map`). */
+
+ let productosS = [{nombre: "Papas", precio: 2}, {nombre: "Carne", precio: 15}, {nombre: "Leche", precio: 3}];
+
+
+   
+let productosCaros = productosS .filter(equis => equis.precio > 4).map(equis => equis.nombre);     
+
+console.log("18. ", "Productos del arreglo original:", productosS);
+console.log("     Productos caros cuyo valor supera el precio de 4: :", productosCaros);
+
+
+ //  -----------------------------------------------------------------------------------------------------------------------------  
