@@ -211,63 +211,97 @@
         console.log("    ", verificaEDITOR);
  
        //  -----------------------------------------------------------------------------------------------------------------------------
-        /*
-           ## Ejercicio 12: Encontrar Usuario (find)
+         /*
+       ## Ejercicio 12: Encontrar Usuario (find)
 
-           Inicias con la lista de usuarios:
-           let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+       Inicias con la lista de usuarios:
+        let usuarios = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
 
-           Tareas:
-           1.  Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.*/
+       Tareas:
+       1.  Encuentra el *objeto* completo del usuario cuyo `id` es 102. Guarda el resultado en `usuarioLuis`.*/
 
-           let usuari0s = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
+       let usuari0s = [{id: 101, nombre: "Ana"}, {id: 102, nombre: "Luis"}, {id: 103, nombre: "Carlos"}];
 
-             let encontrar = usuari0s.find(equis => equis.id == 102);
+       let encontrar = usuari0s.find(equis => equis.id == 102);
 
-             console.log("12.", encontrar);
+       console.log("12.", encontrar);
 
        //  -----------------------------------------------------------------------------------------------------------------------------
-          /*
-           ## Ejercicio 13: Ordenar sin Mutar (Copia + sort)
+        /*
+       ## Ejercicio 13: Ordenar sin Mutar (Copia + sort)
 
-           Inicias con una lista de invitados desordenada:
-           let invitados = ["Zapata", "Alvarez", "Gomez", "Ber
+       Inicias con una lista de invitados desordenada:
+       let invitados = ["Zapata", "Alvarez", "Gomez", "Ber
 
-           Tareas:
-           1.  Crea un nuevo arreglo `invitadosOrdenados` ordenando la lista. **Importante: ¡No mutes el original!** (Pista: `[...invitados].sort()`).
-           2.  Muestra `invitados` para verificar que sigue en el orden origina */
+       Tareas:
+        1.  Crea un nuevo arreglo `invitadosOrdenados` ordenando la lista. **Importante: ¡No mutes el original!** (Pista: `[...invitados].sort()`).
+        2.  Muestra `invitados` para verificar que sigue en el orden origina */
 
-           let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
+       let invitados = ["Zapata", "Alvarez", "Gomez", "Bernal"];
 
-           let invitadosOrdenados = [...invitados].sort ();
+       let invitadosOrdenados = [...invitados].sort ();
 
-           console.log("\n 13. ","Arreglo original sin modificar \n", "\n", invitados);
-           console.log("", "\n      Arreglo con los nombres ordenados\n", " \n", invitadosOrdenados); 
+       console.log("\n 13. ","Arreglo original sin modificar \n", "\n", invitados);
+       console.log("", "\n      Arreglo con los nombres ordenados\n", " \n", invitadosOrdenados); 
           
-            //  -----------------------------------------------------------------------------------------------------------------------------
-            /* 
-              ## Ejercicio 14: Invertir sin Mutar (Copia + reverse)
+       //  -----------------------------------------------------------------------------------------------------------------------------
+       /* 
+       ## Ejercicio 14: Invertir sin Mutar (Copia + reverse)
 
-             Inicias con los pasos de una receta:
-             let receta = ["Paso 1", "Paso 2", "Paso 3"];
+       Inicias con los pasos de una receta:
+       let receta = ["Paso 1", "Paso 2", "Paso 3"];
 
-             Tareas:
-              1.  Crea un nuevo arreglo `recetaInversa`. (Pista: `[...receta].reverse()`).
-              2.  Verifica que `receta` sigue en el orden original. */
+       Tareas:
+       1.  Crea un nuevo arreglo `recetaInversa`. (Pista: `[...receta].reverse()`).
+       2.  Verifica que `receta` sigue en el orden original. */
 
-             let receta = ["Paso 1", "Paso 2", "Paso 3"];
+       let receta = ["Paso 1", "Paso 2", "Paso 3"];
 
-             let recetaInversa = [...receta].reverse();
-               
-               console.log("\n 14. ","Arreglo original sin modificar \n", "\n", receta);
-               console.log("", "\n      Arreglo con los nombres ordenados\n", " \n", recetaInversa); 
-               
+       let recetaInversa = [...receta].reverse();
+           
+        console.log("\n 14. ","Arreglo original sin modificar \n", "\n", receta);
+        console.log("", "\n      Arreglo con los nombres invertidos\n", " \n", recetaInversa); 
+           
+        //  -----------------------------------------------------------------------------------------------------------------------------
+       /* 
+        ## Ejercicio 15: Eliminar sin Mutar (filter)
 
-            //  -----------------------------------------------------------------------------------------------------------------------------
-             
-             
+       Inicias con una fila:
+       let fila = ["Ana", "Luis", "Carlos", "Maria"];
 
+       Tareas:
+        1.  "Luis" (índice 1) se va. Crea una `nuevaFila` sin Luis, usando `filter()`. (Pista: filtra por índice o por nombre).
+        2. Verifica que `fila` original sigue teniendo a "Luis".*/  
 
+         let fila = ["Ana", "Luis", "Carlos", "Maria"];        
+
+         let nuevaFila = [fila].filter(equis => equis != "Luis");
+
+         console.log("\n 15. ","Arreglo original sin modificar \n", "\n", fila);
+         console.log("", "\n      Arreglo con el nombre Luis eliminado sin moficar el original \n", " \n", nuevaFila); 
+          
+
+    //  -----------------------------------------------------------------------------------------------------------------------------  
+      /* 
+       ## Ejercicio 16: Insertar sin Mutar (slice + spread)
+
+       Inicias con la misma fila:
+       let fila = ["Ana", "Luis", "Carlos", "Maria"];
+
+       Tareas:
+       1.  "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* (`...`) para insertarlo.
+       2.  (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
+       3.  Verifica que `fila` original no tiene a "Jorge".*/
+        
+
+       let filA = ["Ana", "Luis", "Carlos", "Maria"];
+
+         let nuevaFilaConJorge = [...filA.slice(0, 1), "Jorge", ...filA.slice(1)];
+
+       console.log("16. Arreglo modificado con Jorge Agregado: ", nuevaFilaConJorge);
+       
+       console.log(" Arreglo filA original: ", filA);
+       
           
 
 
