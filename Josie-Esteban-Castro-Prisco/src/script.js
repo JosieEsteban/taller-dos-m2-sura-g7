@@ -283,26 +283,52 @@
 
     //  -----------------------------------------------------------------------------------------------------------------------------  
       /* 
-       ## Ejercicio 16: Insertar sin Mutar (slice + spread)
+   ## Ejercicio 16: Insertar sin Mutar (slice + spread)
 
-       Inicias con la misma fila:
-       let fila = ["Ana", "Luis", "Carlos", "Maria"];
+   Inicias con la misma fila:
+   let fila = ["Ana", "Luis", "Carlos", "Maria"];
 
-       Tareas:
-       1.  "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* (`...`) para insertarlo.
-       2.  (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
-       3.  Verifica que `fila` original no tiene a "Jorge".*/
-        
+   Tareas:
+   1.  "Jorge" (nuevo) se cuela después de "Ana" (en el índice 1). Crea una `nuevaFilaConJorge` usando `slice` y el operador *spread* (`...`) para insertarlo.
+   2.  (Pista: `[...fila.slice(0, 1), "Jorge", ...fila.slice(1)]`)
+   3.  Verifica que `fila` original no tiene a "Jorge".*/
+    
 
-       let filA = ["Ana", "Luis", "Carlos", "Maria"];
+   let filA = ["Ana", "Luis", "Carlos", "Maria"];
 
-         let nuevaFilaConJorge = [...filA.slice(0, 1), "Jorge", ...filA.slice(1)];
+     let nuevaFilaConJorge = [...filA.slice(0, 1), "Jorge", ...filA.slice(1)];
 
-       console.log("16. Arreglo modificado con Jorge Agregado: ", nuevaFilaConJorge);
-       
-       console.log(" Arreglo filA original: ", filA);
-       
+   console.log("16. Arreglo modificado con Jorge Agregado: ", nuevaFilaConJorge);
+   
+   console.log(" Arreglo filA original: ", filA);
+
+//  -----------------------------------------------------------------------------------------------------------------------------  
+/* 
+   ## Ejercicio 17: Reemplazar sin Mutar (map)
+
+ Inicias con el estado de un tablero:
+ let tablero = ["X", "O", "X"];
+
+ Tareas:
+ 1.  El jugador "O" (índice 1) comete un error y debe ser "X". Crea un `nuevoTablero` usando `map()` para cambiar el valor en ese índice.
+ 2.  Verifica que `tablero` original sigue teniendo "O" en el medio.  */       
           
 
+   let tablero = ["X", "O", "X"];
 
+   let nuevoTablero = tablero.map(( equis, equis2 ) => { if (equis2 === 1) {
 
+     return "X";
+    
+    
+    } return equis;
+
+  });
+
+      console.log( "17. Tablero modificado con la X: ", nuevoTablero);
+      console.log("    ", "Tablero Original: ", tablero);
+      
+      
+//  -----------------------------------------------------------------------------------------------------------------------------  
+ /* 
+ */
