@@ -351,3 +351,21 @@ console.log("     Productos caros cuyo valor supera el precio de 4: :", producto
 
 
  //  -----------------------------------------------------------------------------------------------------------------------------  
+ /*
+  ## Ejercicio 19: Añadir al Inicio (concat o spread)
+ Inicias con un feed de noticias:
+ let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+
+ Tareas:
+  1.  Crea un `nuevoFeed` donde "Noticia Urgente" esté al inicio, seguida de las noticias del `feed` original. (Pista: `["Noticia Urgente"].concat(feed)` o
+   `["Noticia Urgente", ...feed]`). */
+
+  let feed = ["Noticia 1", "Noticia 2", "Noticia 3"];
+
+let nuevoFeedConcat = ["Noticia Urgente"].concat(feed);
+
+console.log("19. Feed de noticias original: ", feed);
+console.log("   Feed con Noticia Urgente Agregado: ", nuevoFeedConcat);
+
+  
+//  -----------------------------------------------------------------------------------------------------------------------------  
