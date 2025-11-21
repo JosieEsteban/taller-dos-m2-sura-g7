@@ -369,3 +369,29 @@ console.log("   Feed con Noticia Urgente Agregado: ", nuevoFeedConcat);
 
   
 //  -----------------------------------------------------------------------------------------------------------------------------  
+/* 
+  ## Ejercicio 20: Desafío de Puntuación (Combinado)
+
+  Inicias con las puntuaciones de un juego:
+  let puntuaciones = [50, 85, -10, 100, 0, 30];
+
+ Tareas (encadenadas):
+  1.  Crea un arreglo validas filtrando las puntuaciones que no sean negativas (>= 0).
+  2.  Usando validas, crea un arreglo bonificadas donde cada puntuación válida se incrementa en 10 puntos (map).
+  3.  Usando bonificadas, calcula el totalPuntos (reduce).*/ 
+
+let puntuaciones = [50, 85, -10, 100, 0, 30];
+
+
+let validas = puntuaciones.filter(equis => equis >= 0);
+let bonificadas = validas.map(equis => equis + 10);
+
+
+let totalPuntos = bonificadas.reduce((equis, p) => equis + p, 0);
+
+console.log("20.  Tabla de Puntuaciones originales: ", puntuaciones);
+console.log("  Tabla de puntuaciones validas con numero mayores a cero :", validas);
+console.log("  Tabla de puntuaciones  con bonificacion: ", bonificadas);
+console.log("  Puntuacion Total: ", totalPuntos);
+
+//----------------------------------------------------------------------------------------------------------------------
